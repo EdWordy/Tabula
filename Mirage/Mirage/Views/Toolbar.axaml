@@ -1,0 +1,67 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:views="clr-namespace:Mirage.Views"
+			 xmlns:vm="clr-namespace:Mirage.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="100"
+             x:Class="Mirage.Views.Toolbar">
+	
+	<DockPanel HorizontalAlignment="Center">
+		<!-- BUTTON 1 - NEW FILE -->
+		<Button Height="96" Width="96">
+			<DockPanel>
+				<Image Width="96" ToolTip.Tip="New File" Source="\Assets\Button-1.png"></Image>
+			</DockPanel>
+		</Button>
+		
+		<!-- BUTTON 2 - OPEN FILE -->
+		<Button Height="96" Width="96">
+			<DockPanel>
+				<Image Width="96" ToolTip.Tip="Open File" Source="\Assets\Button-2.png"></Image>
+			</DockPanel>
+		</Button>
+		
+		<!-- BUTTON 3 - SAVE FILE -->
+		<Button Height="96" Width="96">
+			<DockPanel>
+				<Image Width="96" ToolTip.Tip="Save File" Source="\Assets\Button-3.png"></Image>
+			</DockPanel>
+		</Button>
+		
+		<!-- BUTTON 4 - NEW TAB -->
+		<Button Height="96" Width="96" x:DataType="views:Toolbar" Command="{Binding OnClickNewTab}">
+			<DockPanel>
+				<Image Width="96" ToolTip.Tip="New Tab" Source="\Assets\Button-4.png"></Image>
+			</DockPanel>
+		</Button>
+		
+		<!-- BUTTON 5 - TBD (COPY TAB?) -->
+		<Button Height="96" Width="96">
+			<DockPanel>
+				<Image Width="96"></Image>
+			</DockPanel>
+		</Button>
+		
+		<!-- BUTTON 6 - TBD -->
+		<Button Height="96" Width="96">
+			<DockPanel>
+				<Image Width="96"></Image>
+			</DockPanel>
+		</Button>
+
+		<!-- BUTTON 7 - TBD -->
+		<Button Height="96" Width="96">
+			<DockPanel>
+				<Image Width="96"></Image>
+			</DockPanel>
+		</Button>
+		
+		<!-- BUTTON 8 - TBD -->
+		<Button Height="96" Width="96">
+			<DockPanel>
+				<Image Width="96"></Image>
+			</DockPanel>
+		</Button>
+	</DockPanel>
+</UserControl>

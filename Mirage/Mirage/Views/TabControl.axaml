@@ -1,0 +1,29 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:views="clr-namespace:Mirage.Views"
+			 xmlns:vm="clr-namespace:Mirage.ViewModels"
+             x:Class="Mirage.Views.TabControl">
+
+	<StackPanel>
+		<TabControl ItemsSource="{Binding Tabs}" x:DataType="vm:TabItemModel">
+			<TabControl.ItemTemplate>
+				<DataTemplate>
+					<DockPanel>
+						<Button x:DataType="vm:Tab" Command="{Binding OnClickClose}" ToolTip.Tip="Close"></Button>
+						<TabItem x:DataType="vm:Tab" Header="{Binding Header}">
+						</TabItem>
+					</DockPanel>
+				</DataTemplate>
+			</TabControl.ItemTemplate>
+			<TabControl.ContentTemplate>
+				<DataTemplate>
+					<DockPanel LastChildFill="True">
+						<TextBox AcceptsReturn="True" AcceptsTab="True" Width="780" Height="300" Text="{Binding Content}" x:DataType="vm:Tab" VerticalAlignment="Stretch"></TextBox>
+					</DockPanel>
+				</DataTemplate>
+			</TabControl.ContentTemplate>
+		</TabControl>
+	</StackPanel>
+</UserControl>
