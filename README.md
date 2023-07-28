@@ -6,7 +6,7 @@ An IDE written in C# + Avalonia for Android.
 
 ### Features
 - A simple and reactive UI powered by Avalonia
-- A powerful set of standard features such as syntax highlighting, code completion, and more powered by AvaloniaEdit.
+- A powerful set of standard features such as syntax highlighting, code completion, and more powered by AvaloniaEdit (WIP).
 
 ### Screenshot
 
